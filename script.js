@@ -71,10 +71,31 @@ for (let i = 0; i < botaoEditar.length; i++) {
 // Ao clicar nesses elementos, deve chamar a função 'editarCard()'.
 // Essa função deve mostrar um alerta com a mensagem "Clicou em
 // Editar!".
+const editarCard = () => {
+  alert("Clicou em Editar!");
+};
 
+let selecionarBotaoAdd = document.querySelectorAll(".botao-editar");
+
+for (let i = 0; i < selecionarBotaoAdd.length; i++) {
+  selecionarBotaoAdd[i].setAttribute("onclick", "editarCard()");
+}
 // 9. Adicione o atributo 'onclick' nos elementos de classe
 // “botão-apagar”. Ao clicar nesses elementos deve chamar a função
 // 'apagarCard()'. Essa função deve perguntar ao usuário se ele tem
 // certeza da exclusão do card. Se o usuário confirmar a exclusão deve
 // mostrar um alerta com a mensagem "Confirmado!", se não deve
 // mostrar a mensagem "Cancelou!".
+const apagarCard = () => {
+  if (confirm("Deseja excluir este card?")) {
+    alert("Confirmado");
+  } else {
+    alert("Cancelado");
+  }
+};
+
+let selecionarBotaoApagar = document.querySelectorAll(".botao-apagar");
+
+for (let i = 0; i < selecionarBotaoApagar.length; i++) {
+  selecionarBotaoApagar[i].setAttribute("onclick", "apagarCard()");
+}
