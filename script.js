@@ -6,11 +6,10 @@
 // 1. Capture, armazene e manipule todos os elementos de classe "card".
 // Modifique os estilos necessários nesses elementos para que fique
 // semelhante a imagem.
-const className = document.querySelectorAll(".card");
-for (let i = 0; i < className.length; i++) {
-  className[i].style.background = "orange";
 
-  //FALTA TERMINAR
+const classeCard = document.querySelectorAll(".card");
+for (let i = 0; i < classeCard.length; i++) {
+  classeCard[i].style.background = "orange";
 }
 
 // 2. Capture, armazene e manipule todos os elementos de classe
@@ -33,6 +32,8 @@ const descricao = document.getElementsByClassName("descricao-card");
 for (let i = 0; i < descricao.length; i++) {
   descricao[i].style.color = "white";
   descricao[i].style.fontSize = "14px";
+  descricao[i].style.marginTop = "40px";
+  descricao[i].style.marginBottom = "40px";
 }
 
 // 5. Modifique o texto das descrições nos cards para "Descrição
